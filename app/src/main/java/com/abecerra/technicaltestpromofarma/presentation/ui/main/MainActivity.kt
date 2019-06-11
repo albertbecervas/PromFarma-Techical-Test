@@ -1,7 +1,8 @@
-package com.abecerra.technicaltestpromofarma
+package com.abecerra.technicaltestpromofarma.presentation.ui.main
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.abecerra.technicaltestpromofarma.R
 
 class MainActivity : AppCompatActivity() {
 
