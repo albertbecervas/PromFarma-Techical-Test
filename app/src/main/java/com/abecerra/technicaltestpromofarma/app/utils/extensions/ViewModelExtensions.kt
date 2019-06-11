@@ -50,14 +50,6 @@ fun <K> MutableLiveData<Data<K>>.showError(message: String?) {
     postValue(Data(dataState = DataState.ERROR, message = message))
 }
 
-fun <K> MutableLiveData<Data<K>>.showError(message: Int) {
-    postValue(Data(dataState = DataState.ERROR, message = context.getString(message)))
-}
-
-fun <K> MutableLiveData<Data<K>>.showError2(error: Throwable) {
-    postValue(Data(dataState = DataState.ERROR, message = error.message))
-}
-
 fun <K> MutableLiveData<Data<K>>.showLoading() {
     postValue(Data(dataState = DataState.LOADING))
 }

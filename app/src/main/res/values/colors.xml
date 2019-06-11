@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/white</color>
-    <color name="colorPrimaryDark">@color/original_blue</color>
-    <color name="colorAccent">@color/original_blue</color>
+    <color name="colorPrimary">@color/green_promofarma</color>
+    <color name="colorPrimaryDark">@color/green_promofarma_dark</color>
+    <color name="colorAccent">@color/white</color>
+
+    <color name="green_promofarma">#8AC24A</color>
+    <color name="green_promofarma_dark">#477E05</color>
 
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
+    <color name="yellow"></color>
+
     <color name="white_gray">#DBDBDB</color>
     <color name="gray_soft">#BDBDBD</color>
     <color name="gray_dark">#272727</color>

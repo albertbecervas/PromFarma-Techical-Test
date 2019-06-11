@@ -10,7 +10,7 @@ import android.support.annotation.LayoutRes
 import android.support.v4.app.Fragment
 import android.view.*
 import android.widget.Toast
-import com.abecerra.calculator.core.App
+import com.abecerra.technicaltestpromofarma.app.App
 import com.abecerra.technicaltestpromofarma.app.base.BaseActivity
 
 val Activity.app: App get() = application as App

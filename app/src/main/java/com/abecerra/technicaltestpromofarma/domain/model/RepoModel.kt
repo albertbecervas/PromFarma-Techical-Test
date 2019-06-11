@@ -7,7 +7,7 @@ data class RepoModel(
     val fullName: String,
     val description: String,
     val language: String,
-    val lastUpdate: Date,
+    val lastUpdated: Date?,
     val stars: Int,
     val watchers: Int,
     val forks: Int

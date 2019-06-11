@@ -6,7 +6,7 @@ import com.abecerra.technicaltestpromofarma.R
 import com.abecerra.technicaltestpromofarma.app.navigator.Navigator
 import com.abecerra.technicaltestpromofarma.app.utils.AppSharedPreferences
 import com.abecerra.technicaltestpromofarma.app.utils.extensions.toast
-import kotlinx.android.synthetic.main.view_loading.*
+import kotlinx.android.synthetic.main.layout_loading.*
 import org.koin.android.ext.android.inject
 import org.koin.core.parameter.parametersOf
 
@@ -15,17 +15,21 @@ abstract class BaseActivity : AppCompatActivity() {
     protected val mPrefs: AppSharedPreferences by inject()
 
     protected fun showLoading() {
-        loadingBar?.visibility = View.VISIBLE
+        loading?.visibility = View.VISIBLE
     }
 
     protected fun hideLoading() {
-        loadingBar?.visibility = View.GONE
+        loading?.visibility = View.GONE
 
     }
 
     protected fun showError(error: String?) {
         hideLoading()
-        toast(error ?: getString(R.string.general_error))
+        error?.let {
+            toast(it)
+        } ?: kotlin.run {
+            toast(error ?: getString(R.string.general_error))
+        }
     }
 
     companion object {
