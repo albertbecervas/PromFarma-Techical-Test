@@ -5,7 +5,7 @@ data class Repo(
     val fullName: String,
     val description: String,
     val language: String,
-    val timeSinceLastUpdate: String,
+    val timeSinceLastUpdate: String?,
     val stars: Int,
     val watchers: Int,
     val forks: Int

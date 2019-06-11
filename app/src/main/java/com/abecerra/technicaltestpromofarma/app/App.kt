@@ -1,8 +1,8 @@
-package com.abecerra.calculator.core
+package com.abecerra.technicaltestpromofarma.app
 
 import android.content.Context
 import android.support.multidex.MultiDexApplication
-import com.abecerra.calculator.BuildConfig
+import com.abecerra.technicaltestpromofarma.BuildConfig
 import com.abecerra.technicaltestpromofarma.app.di.AppModule
 import org.koin.core.context.startKoin
 import timber.log.Timber
