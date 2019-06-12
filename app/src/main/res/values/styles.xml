@@ -4,6 +4,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/PfTextViewStyle</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="PfTextViewStyle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:fontFeatureSettings">lnum</item>
     </style>
 
     <style name="CustomRatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">

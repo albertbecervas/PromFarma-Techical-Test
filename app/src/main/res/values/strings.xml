@@ -2,6 +2,9 @@
     <string name="app_name">TechnicalTestPromoFarma</string>
     <string name="general_error">An error occurred</string>
 
+    <string name="watchers">%d watchers</string>
+    <string name="forks">%d forks</string>
+
     <plurals name="elapsed_years">
         <item quantity="one">updated %d year ago</item>
         <item quantity="other">updated %d years ago</item>

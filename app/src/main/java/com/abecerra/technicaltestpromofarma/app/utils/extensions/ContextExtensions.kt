@@ -9,6 +9,7 @@ import android.provider.MediaStore
 import android.support.annotation.LayoutRes
 import android.support.v4.app.Fragment
 import android.view.*
+import android.widget.ImageView
 import android.widget.Toast
 import com.abecerra.technicaltestpromofarma.app.App
 import com.abecerra.technicaltestpromofarma.app.base.BaseActivity
@@ -48,6 +49,10 @@ fun Activity.pickImageFromCamera() {
 
 fun enableFullScreen(window: Window) {
     window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+}
+
+fun ImageView.rotate() {
+    rotation = if (rotation == 0f) 180f else 0f
 }
 
 fun inflate(@LayoutRes resourceLayout: Int, viewGroup: ViewGroup? = null, attachToRoot: Boolean = false): View {

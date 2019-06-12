@@ -51,6 +51,10 @@ class ReposFragment : BaseFragment() {
             getRepos()
         }
 
+        setReposRecyclerView(view)
+    }
+
+    private fun setReposRecyclerView(view: View) {
         adapter = ReposAdapter {
             navigator.navigateToRepoDetail(it)
         }
@@ -66,13 +70,10 @@ class ReposFragment : BaseFragment() {
             override fun isLoading(): Boolean {
                 return this@ReposFragment.isLoading()
             }
-
         }
         scrollListener?.let {
             rvRepos.addOnScrollListener(it)
         }
-
-        getRepos()
     }
 
     private fun getRepos(page: Int = 1) {
@@ -93,6 +94,10 @@ class ReposFragment : BaseFragment() {
         swipeRefreshLayout?.let { swipeLayout ->
             swipeLayout.isRefreshing = false
         }
+    }
+
+    fun onSortSettingsChanged() {
+        getRepos()
     }
 
     private fun updateRepos(data: Data<List<Repo>>?) {

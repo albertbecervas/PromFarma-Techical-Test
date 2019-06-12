@@ -1,5 +1,7 @@
 package com.abecerra.technicaltestpromofarma.presentation.data
 
+import java.io.Serializable
+
 data class Repo(
     val name: String,
     val fullName: String,
@@ -9,4 +11,4 @@ data class Repo(
     val stars: Int,
     val watchers: Int,
     val forks: Int
-)
+) : Serializable
