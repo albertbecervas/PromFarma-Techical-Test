@@ -27,11 +27,10 @@ class AppSharedPreferences {
     }
 
     fun getSelectedSortingOption(): SortingOptions {
-        val selected = mPrefs.getString(SELECTED_SORTING, FULL_NAME.sortValue)
-        return when (selected) {
-            CREATED.sortValue -> CREATED
-            UPDATED.sortValue -> UPDATED
-            PUSHED.sortValue -> PUSHED
+        return when (mPrefs.getString(SELECTED_SORTING, FULL_NAME.sortTitle)) {
+            CREATED.sortTitle -> CREATED
+            UPDATED.sortTitle -> UPDATED
+            PUSHED.sortTitle -> PUSHED
             else -> FULL_NAME
         }
     }
@@ -43,7 +42,7 @@ class AppSharedPreferences {
     }
 
     fun getSelectedDirection(): Direction {
-        val selected = mPrefs.getString(SELECTED_DIRECTION, ASCENDING.directionValue)
+        val selected = mPrefs.getString(SELECTED_DIRECTION, DESCENDING.directionValue)
         return if (selected == ASCENDING.directionValue) ASCENDING else DESCENDING
     }
 

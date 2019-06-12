@@ -33,19 +33,34 @@ object DateFormatter {
             val elapsedYears: Long = elapsedMonths / MONTHS_IN_YEAR
 
             when {
-                elapsedYears != 0L -> context.resources.getQuantityString(R.plurals.elapsed_years, elapsedYears.toInt())
+                elapsedYears != 0L -> context.resources.getQuantityString(
+                    R.plurals.elapsed_years,
+                    elapsedYears.toInt(),
+                    elapsedYears.toInt()
+                )
                 elapsedMonths != 0L -> context.resources.getQuantityString(
                     R.plurals.elapsed_months,
+                    elapsedMonths.toInt(),
                     elapsedMonths.toInt()
                 )
-                elapsedDays != 0L -> context.resources.getQuantityString(R.plurals.elapsed_days, elapsedDays.toInt())
-                elapsedHours != 0L -> context.resources.getQuantityString(R.plurals.elapsed_hours, elapsedHours.toInt())
+                elapsedDays != 0L -> context.resources.getQuantityString(
+                    R.plurals.elapsed_days,
+                    elapsedDays.toInt(),
+                    elapsedDays.toInt()
+                )
+                elapsedHours != 0L -> context.resources.getQuantityString(
+                    R.plurals.elapsed_hours,
+                    elapsedHours.toInt(),
+                    elapsedHours.toInt()
+                )
                 elapsedMinutes != 0L -> context.resources.getQuantityString(
                     R.plurals.elapsed_minutes,
+                    elapsedMinutes.toInt(),
                     elapsedMinutes.toInt()
                 )
                 else -> null
             }
+
         } ?: kotlin.run {
             null
         }

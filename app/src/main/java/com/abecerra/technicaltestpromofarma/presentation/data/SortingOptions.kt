@@ -1,5 +1,6 @@
 package com.abecerra.technicaltestpromofarma.presentation.data
 
-enum class SortingOptions(val sortValue: String) {
-    CREATED("Created"), UPDATED("Updated"), PUSHED("Pushed"), FULL_NAME("full_name")
+enum class SortingOptions(val sortTitle: String, val sortValue: String) {
+    CREATED("Created", "created"), UPDATED("Updated", "updated"),
+    PUSHED("Pushed", "pushed"), FULL_NAME("Full name", "full_name")
 }
