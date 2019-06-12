@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">TechnicalTestPromoFarma</string>
+    <string name="general_error">An error occurred</string>
+
+    <string name="watchers">%d watchers</string>
+    <string name="forks">%d forks</string>
+
+    <plurals name="elapsed_years">
+        <item quantity="one">updated %d year ago</item>
+        <item quantity="other">updated %d years ago</item>
+    </plurals>
+    <plurals name="elapsed_months">
+        <item quantity="one">updated %d month ago</item>
+        <item quantity="other">updated %d months ago</item>
+    </plurals>
+    <plurals name="elapsed_days">
+        <item quantity="one">updated %d day ago</item>
+        <item quantity="other">updated %d days ago</item>
+    </plurals>
+    <plurals name="elapsed_hours">
+        <item quantity="one">updated %d hour ago</item>
+        <item quantity="other">updated %d hours ago</item>
+    </plurals>
+    <plurals name="elapsed_minutes">
+        <item quantity="one">updated %d minute ago</item>
+        <item quantity="other">updated %d minutes ago</item>
+    </plurals>
 </resources>
