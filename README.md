@@ -13,6 +13,8 @@ o Time since last update
 * Pagination
 * Sorting options
 * Persist sorting options
+
+
 -Detail:
 * Name
 * Description
