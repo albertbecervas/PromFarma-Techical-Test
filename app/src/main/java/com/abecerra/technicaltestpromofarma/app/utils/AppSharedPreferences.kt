@@ -2,9 +2,9 @@ package com.abecerra.technicaltestpromofarma.app.utils
 
 import android.content.SharedPreferences
 import com.abecerra.technicaltestpromofarma.app.App
-import com.abecerra.technicaltestpromofarma.presentation.data.Direction
-import com.abecerra.technicaltestpromofarma.presentation.data.Direction.ASCENDING
-import com.abecerra.technicaltestpromofarma.presentation.data.Direction.DESCENDING
+import com.abecerra.technicaltestpromofarma.presentation.data.SortingDirection
+import com.abecerra.technicaltestpromofarma.presentation.data.SortingDirection.ASCENDING
+import com.abecerra.technicaltestpromofarma.presentation.data.SortingDirection.DESCENDING
 import com.abecerra.technicaltestpromofarma.presentation.data.SortingOptions
 import com.abecerra.technicaltestpromofarma.presentation.data.SortingOptions.*
 
@@ -41,7 +41,7 @@ class AppSharedPreferences {
             .apply()
     }
 
-    fun getSelectedDirection(): Direction {
+    fun getSelectedDirection(): SortingDirection {
         val selected = mPrefs.getString(SELECTED_DIRECTION, DESCENDING.directionValue)
         return if (selected == ASCENDING.directionValue) ASCENDING else DESCENDING
     }

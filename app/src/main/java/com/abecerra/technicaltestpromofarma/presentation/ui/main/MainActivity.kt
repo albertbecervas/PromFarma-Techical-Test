@@ -7,8 +7,8 @@ import android.view.View
 import com.abecerra.technicaltestpromofarma.R
 import com.abecerra.technicaltestpromofarma.app.base.BaseActivity
 import com.abecerra.technicaltestpromofarma.app.utils.extensions.rotate
-import com.abecerra.technicaltestpromofarma.presentation.data.Direction.ASCENDING
-import com.abecerra.technicaltestpromofarma.presentation.data.Direction.DESCENDING
+import com.abecerra.technicaltestpromofarma.presentation.data.SortingDirection.ASCENDING
+import com.abecerra.technicaltestpromofarma.presentation.data.SortingDirection.DESCENDING
 import com.abecerra.technicaltestpromofarma.presentation.data.SortingOptions
 import com.abecerra.technicaltestpromofarma.presentation.ui.repos.ReposFragment
 import kotlinx.android.synthetic.main.layout_toolbar.*
